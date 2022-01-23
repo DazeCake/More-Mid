@@ -1,0 +1,4 @@
+server:
+  port: 9000
+ws:
+  url: 'ws://localhost:8800/mc'
