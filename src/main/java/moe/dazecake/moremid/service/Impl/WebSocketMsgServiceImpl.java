@@ -17,22 +17,24 @@ public class WebSocketMsgServiceImpl implements WebSocketMsgService {
 
     @Override
     public void causeSelector(BDXWebSocketMsg bdxWebSocketMsg) {
-        switch (bdxWebSocketMsg.getCause()) {
-            case "join":
-                onJoin(bdxWebSocketMsg);
-                break;
-            case "left":
-                onLeft(bdxWebSocketMsg);
-                break;
-            case "cmd":
-                onCmd(bdxWebSocketMsg);
-                break;
-            case "chat":
-                onChat(bdxWebSocketMsg);
-                break;
-            case "mobdie":
-                onMobDie(bdxWebSocketMsg);
-                break;
+        if (bdxWebSocketMsg.getType().equals("pack")) {
+            switch (bdxWebSocketMsg.getCause()) {
+                case "join":
+                    onJoin(bdxWebSocketMsg);
+                    break;
+                case "left":
+                    onLeft(bdxWebSocketMsg);
+                    break;
+                case "cmd":
+                    onCmd(bdxWebSocketMsg);
+                    break;
+                case "chat":
+                    onChat(bdxWebSocketMsg);
+                    break;
+                case "mobdie":
+                    onMobDie(bdxWebSocketMsg);
+                    break;
+            }
         }
     }
 
