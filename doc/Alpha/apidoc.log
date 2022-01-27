@@ -1,0 +1,24 @@
+1月 27, 2022 4:14:19 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find java src paths:  [D:\IdeaProjects\More-Mid\src\main\java]
+1月 27, 2022 4:14:19 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: project type not set, try to figure out...
+1月 27, 2022 4:14:19 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start find controllers in path : D:\IdeaProjects\More-Mid\src\main\java
+1月 27, 2022 4:14:19 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : EconomicController.java
+1月 27, 2022 4:14:19 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : EconomicController.java
+1月 27, 2022 4:14:19 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : EconomicController.java
+1月 27, 2022 4:14:19 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs start...
+1月 27, 2022 4:14:19 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : D:\IdeaProjects\More-Mid\src\main\java\moe\dazecake\moremid\controller\EconomicController.java
+1月 27, 2022 4:14:20 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : D:\IdeaProjects\More-Mid\src\main\java\moe\dazecake\moremid\controller\EconomicController.java
+1月 27, 2022 4:14:20 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index start !!!
+1月 27, 2022 4:14:20 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index done !!!
+1月 27, 2022 4:14:20 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs done !!!
