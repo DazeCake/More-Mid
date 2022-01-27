@@ -2,31 +2,31 @@ package moe.dazecake.moremid.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @TableName("bank")
 public class BankEntity {
     @TableId
-    Long id;
+    Long id;//ID
 
-    //用户ID
-    Long userId;
+    Long userId;//用户ID
 
-    //用户名
-    String userName;
+    String userName;//用户名
 
-    //XUID
-    String xuid;
+    String xuid;//XUID
 
-    //余额
-    Double balance;
+    Double balance;//余额
 
-    //创建时间
-    LocalDateTime createTime;
+    LocalDateTime createTime;//创建时间
 
-    //上次更新时间
-    LocalDateTime updateTime;
+    LocalDateTime updateTime;//上次更新时间
 }

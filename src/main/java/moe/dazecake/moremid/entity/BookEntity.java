@@ -2,29 +2,29 @@ package moe.dazecake.moremid.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @TableName("book")
 public class BookEntity {
     @TableId
-    Long id;
+    Long id;//ID
 
-    //用户ID
-    Long userId;
+    Long userId;//用户ID
 
-    //收入
-    Double income;
+    Double income;//收入
 
-    //支出
-    Double spend;
+    Double spend;//支出
 
-    //余额
-    Double balance;
+    Double balance;//余额
 
-    //种类
-    String type;
+    String type;//种类
 
-    //消息摘要
-    String msg;
+    String msg;//消息摘要
 }

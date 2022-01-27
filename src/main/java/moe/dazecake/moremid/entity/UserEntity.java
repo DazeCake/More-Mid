@@ -2,7 +2,10 @@ package moe.dazecake.moremid.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
@@ -12,35 +15,29 @@ import java.time.LocalDateTime;
  * @author DazeCake
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @TableName("user")
 public class UserEntity {
     @TableId
     Long id;
 
-    //用户名
-    String userName;
+    String userName;//用户名
 
-    //XUID
-    String xuid;
+    String xuid;//XUID
 
-    //邮箱
-    String email;
+    String email;//邮箱
 
-    //密码
-    String password;
+    String password;//密码
 
-    //权限
-    Long permissions;
+    Long permissions;//权限
 
-    //账号状态
-    Boolean delete;
+    Boolean delete;//账号状态
 
-    //最后登陆IP
-    String lastLoginIp;
+    String lastLoginIp;//最后登陆IP
 
-    //上次登陆时间
-    LocalDateTime lastLoginTime;
+    LocalDateTime lastLoginTime;//上次登陆时间
 
-    //创建时间
-    LocalDateTime createTime;
+    LocalDateTime createTime;//创建时间
 }
